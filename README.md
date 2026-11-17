@@ -40,6 +40,10 @@ Domínios em que tenho entregado: **imagem médica (PACS/DICOM)**, **gestão de 
 ![MUI](https://img.shields.io/badge/MUI-007FFF?style=flat-square&logo=mui&logoColor=white)
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white)
+![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)
+![Wear OS](https://img.shields.io/badge/Wear%20OS-4285F4?style=flat-square&logo=wearos&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-0071E3?style=flat-square&logo=swift&logoColor=white)
 
 **Dados & Infra**
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
@@ -74,6 +78,9 @@ Logs estruturados por usuário com soft delete, retenção, estatísticas e expo
 ### Integração com hardware (NFC / embarcados)
 Firmware STM32F411 + PN532 enumerando como **leitor USB CCID** padrão (sem driver no Windows), serviço Windows em .NET 6 com PCSC e motor de sincronização offline, desktop Python de gravação de cartões, emulação **HCE** em Android e análise de cartões com Proxmark3.
 
+### Mobile — Android e iOS
+Apps Android em **Kotlin com Jetpack Compose**: Material 3, navegação e ViewModel em Compose, injeção de dependência com Hilt e consumo de API com Retrofit. Extensão para **Wear OS** com Compose, serviços wearable e interações remotas com o celular. Em **iOS/Swift**, experiência básica focada em construção de interface.
+
 ### Imagem médica — PACS/DICOM
 Stack white label com Orthanc, DICOMweb (QIDO-RS/WADO-RS), viewer Cornerstone3D, servidor de **Modality Worklist** nativo em FastAPI com `pynetdicom`, laudo estruturado com templates e geração de PDF (WeasyPrint isolado em subprocesso), portal do paciente e separação de papéis médico/recepção/admin sob LGPD.
 
@@ -97,7 +104,7 @@ Monorepos orquestrados por Docker Compose, migrations com Alembic, testes com py
 | **Neutramais** | Backend de infraestrutura de telecomunicações com CTOs, ordens de serviço e dados geoespaciais | Django · DRF · PostGIS · Celery |
 | **[Class_KML_KMZ](https://github.com/marcelbleasby/Class_KML_KMZ)** | Motor semântico-topológico que reconstrói infraestrutura óptica a partir de KML/KMZ | Python · scikit-learn · XGBoost · PostGIS |
 | **[edge-security](https://github.com/marcelbleasby/edge-security)** | Monitoramento passivo de rede e administração DNS | Suricata · Pi-hole · FastAPI · Next.js |
-| **[RU_Virtual](https://github.com/marcelbleasby/RU_Virtual)** | App de restaurante universitário com emulação de cartão via HCE e versão Wear OS | Kotlin · Android · Wear OS |
+| **[RU_Virtual](https://github.com/marcelbleasby/RU_Virtual)** | App de restaurante universitário com emulação de cartão via HCE e versão Wear OS | Kotlin · Jetpack Compose · Hilt · Retrofit · Wear OS |
 | **firmware-nfc-reader** | Leitor NFC USB CCID em STM32F411 + PN532 | C · STM32 · SPI · USB OTG |
 
 ---
